@@ -24,7 +24,7 @@ function App() {
 
 
   useEffect(()=>{
-    axios.get('https://gateway.marvel.com:443/v1/public/comics?format=comic&formatType=comic&noVariants=true&title=ghost%20rider&ts=1&apikey=84c9afc670217a09f2566ca3189177f9&hash=273ddb932eb9647e18e21c589d55f000').then(res=>{
+    axios.get('https://gateway.marvel.com:443/v1/public/comics?format=comic&formatType=comic&noVariants=true&title=fantastic%20four&ts=1&apikey=84c9afc670217a09f2566ca3189177f9&hash=273ddb932eb9647e18e21c589d55f000').then(res=>{
         setCharacters(res.data.data.results)
         
     }).catch(error=>console.log(error))
@@ -48,8 +48,8 @@ function App() {
                 />
             <div className="Character__data">
                 <h1 className="Character__name">Name: {per.title}</h1>
-                <h2 className="Character__name">Stories: {per.stories.available}</h2>
-                <h3 className="Character__name">Series: {per.series.name}</h3>
+                <h2 className="Character__name">Stories Available: {per.stories.available}</h2>
+                <h3 className="Character__name">{per.series.name}</h3>
                 <h3 className="Character__name">Format: {per.format}</h3>
             </div>
         </div>
