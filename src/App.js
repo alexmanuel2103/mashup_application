@@ -20,12 +20,10 @@ import  axios from 'axios';
 
 function App() {
 
-  //esta es una variable para guardar los personajes
   const [characters, setCharacters]=useState([])
 
 
   useEffect(()=>{
-    //Usando axios obtenemos la informacion del link de marvel
     axios.get('https://gateway.marvel.com:443/v1/public/comics?format=comic&formatType=comic&noVariants=true&title=ghost%20rider&ts=1&apikey=84c9afc670217a09f2566ca3189177f9&hash=273ddb932eb9647e18e21c589d55f000').then(res=>{
         setCharacters(res.data.data.results)
         
