@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background: url(./lib/tidbisapi/images/yellow.jpg) no-repeat center center fixed;
+  background: url(./lib/tidbisapi/images/proof.jpg) no-repeat center center fixed;
   background-size: cover;
 }
   
@@ -44,22 +44,23 @@
 
 img{
   padding: 20px;
-  width: 500px;
+  width: 400px;
   height: 500px;
+  
 }
 
 div.Character__container{
-  background-color: #be4208 ;
+  background-color: #F0131e ;
   margin: 5%;
   text-align: center;
   border-radius: 10px;
-  color:rgb(0, 0, 0);
+  color: #fff;
   display:inline-block;
   
 }
 
 div.Character__data{
-  background-color: #fcff3b ;
+  background-color: #a51010 ;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 5px;
@@ -85,6 +86,22 @@ p{
 }
 div.App_Header{
   text-align: center;
-  background: url(./lib/tidbisapi/images/title.png) no-repeat center center fixed;
+  background: url(./lib/tidbisapi/images/comics.jpg) no-repeat center center fixed; 
   background-size: cover;
+}
+
+div.header{
+  background-color: #F0131e;
+
+}
+img.logoMarvel{
+  width: 250px;
+  height: 100px;
+  
+}
+
+div.students{
+  background-color: #a51010;
+  color: #fff;
+  padding: 5px;
 }

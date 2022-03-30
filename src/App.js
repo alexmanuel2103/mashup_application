@@ -36,6 +36,12 @@ function App() {
   return (
     <React.Fragment>
       <div className='App'>
+      <div className='header'>
+        <img className='logoMarvel'src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/1200px-Marvel_Logo.svg.png'></img>
+      </div>
+      <div className='students'>
+            Derek Alvarado, Alex Barraza, Luis Hernández, Salvador Perez and Luis Villa
+      </div>
       <div  className='App_Header'>
       </div>
         <div className='Characters_data'>
@@ -47,10 +53,9 @@ function App() {
                     src={`${per.thumbnail.path}.${per.thumbnail.extension}`}
                 />
             <div className="Character__data">
-                <h1 className="Character__name">Name: {per.title}</h1>
+                <h1 className="Character__name">{per.title}</h1>
                 <h2 className="Character__name">Stories Available: {per.stories.available}</h2>
                 <h3 className="Character__name">{per.series.name}</h3>
-                <h3 className="Character__name">Format: {per.format}</h3>
             </div>
         </div>
 
