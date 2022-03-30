@@ -3,35 +3,28 @@ import Series from '../components/tidbiscomponents';
 //import "./home.css";
 import Http from "../lib/tidbisapi/";
 
-
-class Home extends React.Component {
-    state = {
-        title: "Marvel series API made by students",
-        series: [],
-    };
-
-    componentDidMount () {
-        this.get_data();
-    };
-
-    get_data = async () => {
-        const response = await Http.instance.get_series()
-        console.log(response)
-        this.setState({series: response})
-    };
-
-    render() {
-        return (
-            <article className="top">
-                <h1 className="title">{this.state.title}</h1>
-                <div className="Series">
-                <h4 className="name">TIDBIS41M <br></br><br></br> Service oriented web applications</h4>
-                    {this.state.Series.map((series) => <Series Series={series} />)}
-                    
-                </div>
-            </article>
-        );
-    }
-}
+    class Home extends React.Component{
+        state={
+            Series:[]
+        }
+        
+        render(){
+            return(
+                <React.Fragment>
+                     <body>
+                         <div className="title">
+                         <h1>Custom made Marvel series API</h1>
+                         <h2>Teammates: Derek Alvarado, Manuel Barraza, Luis Hernández, Salvador Perez, Luis Villa</h2>
+                         <h3>Group: TIDBIS41M</h3>
+                         </div>
+                            <div className="character_boxes">
+                            {this.state.Series.map((series) => 
+                                {return  <Series series = {series}/>
+                                })}
+                            </div>
+                     </body>
+                </React.Fragment> 
+            )
+        }
 
 export default Home;

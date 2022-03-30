@@ -33,7 +33,7 @@ const Series = () =>{
     return (
         <React.Fragment>
                <div>
-                   <h1>Hola mundo</h1>
+                   <h1>Series</h1>
                </div>
         </React.Fragment>
     );

@@ -1,4 +1,4 @@
-#README.md document for mashup application
+# README.md document for mashup application
 
 Colaborators:
 <br>
@@ -9,11 +9,10 @@ Manuel Barraza
 Luis Hernandez
 <br>
 Salvador Perez
+<br>
 Luis Villa
 <br>
 <br>
-#Description
-<br>
-<br>
+<h2>Description</h2>
 This web software application has the purpose of being a mashup applicaton where it consumes a API built by
 the students themselves and also consuming a third part API.
