@@ -15,6 +15,5 @@ Luis Villa
 <br>
 <h2>Description</h2>
 <br>
-<br>
 This web software application has the purpose of being a mashup applicaton where it consumes a API built by
 the students themselves and also consuming a third part API.
